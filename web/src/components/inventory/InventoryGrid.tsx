@@ -6,7 +6,8 @@ import { getTotalWeight } from '../../helpers';
 import { useAppSelector } from '../../store';
 import { useIntersection } from '../../hooks/useIntersection';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faList, faBriefcase, faUserTie } from '@fortawesome/free-solid-svg-icons';
+import { faList, faBriefcase, faUserTie, faListCheck, faHashtag } from '@fortawesome/free-solid-svg-icons';
+import BodyDamege from './BodyDamge';
 
 const PAGE_SIZE = 30;
 
@@ -53,7 +54,7 @@ const InventoryGrid: React.FC<{ inventory: Inventory }> = ({ inventory }) => {
             <WeightBar percent={inventory.maxWeight ? (weight / inventory.maxWeight) * 100 : 0} />
             </div>
             {inventory.maxWeight && (
-              <p className='WeightText' style={{ marginRight: inventory.type === 'player' ? 15 : 0 }}>
+              <p className='WeightText' style={{ marginRight: inventory.type === 'player' ? 3 : 0 }}>
                 Weight: {weight / 1000}/{inventory.maxWeight / 1000}kg
               </p>
             )}
@@ -97,8 +98,9 @@ const InventoryGrid: React.FC<{ inventory: Inventory }> = ({ inventory }) => {
                     />
                   ))}
                 </div>
-                <img style={{ height: '41rem' }} src="nui://ox_inventory/web/images/char.png" alt="Character Image Missing (Read Docs)" />
-
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%' }}>
+                  <BodyDamege />
+                </div>
                 <div className='Clothing2'>
                   {inventory.items.slice(37, 44).map((item, index) => (
                     <InventorySlot

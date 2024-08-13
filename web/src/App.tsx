@@ -4,6 +4,7 @@ import { Items } from './store/items';
 import { Locale } from './store/locale';
 import { setImagePath } from './store/imagepath';
 import { setupInventory } from './store/inventory';
+import { setDamage } from './store/damage';
 import { Inventory } from './typings';
 import { useAppDispatch } from './store';
 import { debugData } from './utils/debugData';
@@ -109,6 +110,9 @@ const App: React.FC = () => {
   useNuiEvent('closeInventory', () => {
     manager.dispatch({ type: 'dnd-core/END_DRAG' });
   });
+  useNuiEvent('DamageCall', (data: any) => {
+    dispatch(setDamage(data))
+  })
 
   return (
     <div className="app-wrapper">

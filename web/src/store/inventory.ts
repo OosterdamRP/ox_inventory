@@ -7,7 +7,7 @@ import {
   stackSlotsReducer,
   swapSlotsReducer,
 } from '../reducers';
-import { State } from '../typings';
+import { State, Slot } from '../typings';
 
 const initialState: State = {
   leftInventory: {

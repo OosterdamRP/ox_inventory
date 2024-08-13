@@ -160,6 +160,7 @@ button:active {
   justify-content: center;
   align-items: center;
   height: 70%;
+  width: 100%;
 }
 
 .ButtonRow{
@@ -341,7 +342,7 @@ button:active {
   grid-auto-rows: 95px;
   gap: 0;
   overflow-y: scroll;
-  width: 65rem;
+  width: 76rem;
 }
 
 .inventory-grid-container {
@@ -646,12 +647,12 @@ button:active {
   grid-template-columns: repeat(5,95px);
   grid-auto-rows: 95px;
   gap: 10px;
-  margin-left: 26.5vw;
+  margin-left: 36.5vw;
 }
 
 .ClothingSlots{
   display: flex;
-  gap: 25px;
+  // gap: 25px;
   overflow: auto;
   position: fixed;
 }
@@ -661,7 +662,7 @@ button:active {
   display: grid;
   grid-template-columns: 88px;
   grid-auto-rows: 88px;
-  gap: 8px;
+  gap: 16px;
 }
 .Clothing3
 {
@@ -741,10 +742,25 @@ button:active {
 .LabelName{
   display: flex;
   align-items: center;
-  width: 26.5vw;
+  width: 36.5vw;
   font-size: 25px;
   font-family: 'Gilroy-Regular',sans-serif;
-  padding-left: 6px;
+}
+
+.LabelId{
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-family: 'Gilroy-Light',sans-serif;
+  padding-left: 50px;
+}
+
+.LabelJob {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-family: 'Gilroy-Light', sans-serif;
+  padding-left: 50px;
 }
 
 @media screen and (max-width: 1700px) {
@@ -806,4 +822,97 @@ button:active {
   }
 }
 
+.group .overlap-group {
+  height: 36vw;
+  width: 25vw;
+  position: relative;
+  margin-left: -1.5vw;
+}
 
+.group .UPPERBODY {
+  height: 36.9169vw;
+  left: 2.6vw;
+  object-fit: cover;
+  position: absolute;
+  top: 1.03vw;
+  width: 20.5vw;
+}
+
+.group .img {
+  height: 38.23045vw;
+  left: 2.8125vw;
+  object-fit: cover;
+  position: absolute;
+  top: 0.2032vw;
+  width: 20.07625vw;
+}
+
+.group .LLEG {
+  height: 38.23045vw;
+  object-fit: cover;
+  position: absolute;
+  left: 2.953125vw;
+  top: 0.2703125vw;
+  width: 20.07625vw;
+}
+
+.group .RLEG {
+  height: 38.23045vw;
+  left: 2.7890625vw;
+  object-fit: cover;
+  position: absolute;
+  top: 0.2703125vw;
+  width: 20.07625vw;
+}
+
+.group .LARM {
+  height: 38.23045vw;
+  left: 2.8125vw;
+  object-fit: cover;
+  position: absolute;
+  top: 0.2375vw;
+  width: 20.07625vw;
+}
+
+.group .neck {
+  height: 38.23045vw;
+  left: 5.5vw;
+  object-fit: cover;
+  position: absolute;
+  top: 0.303125vw;
+  width: 20.07625vw;
+}
+
+.group .img-2 {
+  top: 0.394vw;
+  left: 3.15vw;
+  position: absolute;
+  width: 19.41625vw;
+  height: 38.23045vw;
+}
+
+.group .img-3 {
+  top: 0.4vw;
+  left: 3.2vw;
+  position: absolute;
+  width: 19.41625vw;
+  height: 38.23045vw;
+}
+
+.group .head {
+  height: 38.23045vw;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0.135625vw;
+  width: 20.07625vw;
+}
+
+.group .RARM {
+  height: 38.9169vw;
+  left: 2.5462vw;
+  object-fit: cover;
+  position: absolute;
+  top: -0.007vw;
+  width: 20.5417vw;
+}
